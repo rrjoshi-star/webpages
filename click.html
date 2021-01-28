@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name= "viewport"
+  content="width=device-width , initial-scale=1">
+<title> javascript calculater </title>
+<style>
+div{
+width:500px;
+height:400px;
+bgcolor: "yellow"
+}
+</style>
+
+<style>
+h1 {
+   color:blue;
+text-align:center;
+
+}
+
+
+</style>
+
+
+</head>
+
+
+<body bgcolor=#0c7eb5 >
+
+
+<h1> Welcome to my calulater </h1>
+<h2 align="center"> Hello to first paragraph </h2>
+<h3 align="center"> start second paragraph here </h3>
+
+
+
+   <form  align="center" name="formcalc">
+
+	<h3 >Number 1: </h3><input type="text" name="txtn1">
+	<br>
+	<h3>Number 2:</h3> <input type="text" name="txtn2">
+	<br>
+	<br>
+	<h3>Result:</h3> <input type="text" name="txtres">
+	<br>
+	<br>
+	<input  type="button"  value="Calculate"  onclick="sumValues()">
+
+ </form>
+<p>	
+<table align="center" border='1' cellpadding='5'>
+<tr><th>number</th><th>squared</th><tr>
+
+<tr><td> 3</td><td>9</td></tr>
+<tr><td> 4</td><td>16</td></tr>
+
+</table>
+</p>
+
+
+</body>
+
+<script type="text/javascript">
+		
+		function sumValues()
+		{
+			var num1,num2, res;
+			num1= Number(document.formcalc.txtn1.value);
+			num2= Number(document.formcalc.txtn2.value);
+			res = num1 + num2;
+			document.formcalc.txtres.value=res;
+		}
+</script>
+
+</html>
